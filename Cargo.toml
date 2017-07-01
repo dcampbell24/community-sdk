@@ -1,0 +1,17 @@
+[package]
+name = "emotiv-community-sdk"
+version = "0.1.0"
+authors = ["David Campbell <dcampbell24@gmail.com>"]
+links = "edk"
+build = "lib/rust/build.rs"
+publish = false
+
+[lib]
+path = "lib/rust/src/lib.rs"
+
+[build-dependencies]
+bindgen = "0.23"
+
+[[bin]]
+name = "average_band_powers"
+path = "examples_basic/rust/average_band_powers.rs"
